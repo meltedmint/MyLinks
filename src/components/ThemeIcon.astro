@@ -32,8 +32,6 @@
 <header class="header">
   <button id="themeToggle">
     <svg width="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <!-- 바깥 원 하나만 사용 -->
-      <circle class="theme-border" cx="12" cy="12" r="11" fill="none" stroke-width="2"/>
       <!-- 태양 -->
       <path
         class="sun"
@@ -45,20 +43,30 @@
         class="moon"
         fill="#19e2a2"
         stroke="none"
-        stroke-width="0.8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
         d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z"
       />
     </svg>
 
     <style>
-      .theme-border {
-        stroke: rgba(57, 57, 57, 0.58); /* 해(라이트) 기본 */
-        transition: stroke 0.3s;
+      #themeToggle {
+        position: fixed;
+        right: 2rem;
+        bottom: 2rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #e1fff4; /* 훨씬 더 밝은 민트-화이트톤 */
+        backdrop-filter: blur(20px);
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        border: 3px solid #448e78; /* 어두운 테두리(라이트) */
+        z-index: 1000;
+        transition: background 0.3s, border-color 0.3s;
       }
       .sun {
-        fill: rgb(255, 244, 124);
+        fill: rgb(255, 153, 0);
         transition: fill 0.3s;
         display: inline;
       }
@@ -68,8 +76,12 @@
         display: none;
       }
       /* 다크 모드일 때 */
+      :global(.dark) #themeToggle {
+        background: #232323;
+        border-color: #19e2a2; /* 밝은 민트 테두리 */
+      }
       :global(.dark) .theme-border {
-        stroke: rgba(255, 255, 255, 0.58); /* 달(다크) */
+        stroke: #19e2a2; /* 밝은 민트 테두리 */
       }
       :global(.dark) .sun {
         display: none;
@@ -85,25 +97,6 @@
       /* Remove position, top, left, padding */
       z-index: 90;
       /* Optionally: height: 0; */
-    }
-    #themeToggle {
-      position: fixed;
-      right: 2rem;
-      bottom: 2rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #0000005a;
-      backdrop-filter: blur(20px);
-      border-radius: 50%;
-      width: 70px;   /* 100px → 70px */
-      height: 70px;  /* 100px → 70px */
-      border: 1px solid rgb(0, 0, 0);
-      z-index: 1000;
-    }
-    :global(.dark) #themeToggle{
-      border: 1px solid aqua;
     }
   </style>
 

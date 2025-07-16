@@ -14,7 +14,7 @@
     --text-bold-color: #007a6c;
     --text-highlight: #325a46;
 
-    --drop-shadow: 0px 8px 8px rgba(57, 57, 57, 0.58);
+    --drop-shadow: 0px 0px 12px rgba(57, 57, 57, 0.58);
 
     --font-noto-sans-jp: 'Noto Sans JP Variable', sans-serif;
 
@@ -23,7 +23,7 @@
 }
 
 .dark {
-    --drop-shadow: 0px 8px 8px rgba(255, 255, 255, 0.58);
+    --drop-shadow: 0px 0px 12px rgba(255, 255, 255, 0.58);
     --bg-color: #2e2e2e;
 
 }
