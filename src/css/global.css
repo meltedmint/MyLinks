@@ -1,30 +1,30 @@
 @import "./reset.css";
-@import "@fontsource-variable/montserrat";
+@import "@fontsource-variable/noto-sans-jp";
 
 :root {
-    --main-color: #2b007a;
-    --bg-color: #e4e2ea;
-    --cards: #d8ccff;
+    --main-color: #5f88a1;
+    --bg-color: #e9f6e9;
+    --cards: #ccffed;
 
-    --button-flat: #6a00ff;
-    --button-hover: #770fff;
-    --button-active: #6a00ff;
-    --border-color: #9d70ff;
+    --button-flat: #84b8b1;
+    --button-hover: #3d8877;
+    --button-active: #1e6058;
+    --border-color: #17423a; /* 더 어두운 청록/딥그린 */
 
-    --text-bold-color: #2b007a;
-    --text-highligth: #770fff;
+    --text-bold-color: #007a6c;
+    --text-highlight: #325a46;
 
-    --drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.333);
+    --drop-shadow: 0px 8px 8px rgba(57, 57, 57, 0.58);
 
-    --font-montserrat: 'Montserrat Variable', sans-serif;
+    --font-noto-sans-jp: 'Noto Sans JP Variable', sans-serif;
 
     /* Darkmode */
 
 }
 
 .dark {
-    --drop-shadow: 0px 4px 4px rgba(112, 112, 112, 0.281);
-    --bg-color: #0b0b0b;
+    --drop-shadow: 0px 8px 8px rgba(255, 255, 255, 0.58);
+    --bg-color: #2e2e2e;
 
 }
 
@@ -39,7 +39,7 @@ html {
 
 body {
     background: var(--bg-color);
-    font-family: var(--font-montserrat);
+    font-family: var(--font-noto-sans-jp);
 }
 
 

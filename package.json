@@ -1,5 +1,5 @@
 {
-  "name": "allmylinks",
+  "name": "MyLinks",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,17 +10,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.11",
-    "@fontsource-variable/montserrat": "^5.0.19",
-    "astro": "^5.1.8"
+    "@astrojs/rss": "^4.0.12",
+    "@fontsource-variable/noto-sans-jp": "^5.2.6",
+    "astro": "^5.11.1"
   },
   "description": "A simple Astro project to showcase your  links",
   "main": "index.astro",
   "keywords": [
     "astro",
-    "allMyLinks",
-    "sofidev"
+    "MyLinks",
+    "meltedmint"
   ],
-  "author": "SofiDev",
+  "author": "meltedmint",
   "license": "MIT"
 }

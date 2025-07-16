@@ -1,5 +1,5 @@
 import { fetchYouTubeVideos } from '@services/youtubeService';
-const channelId = "UC36_js-krsAHAEAWpEDhHtw"; // Youtube Channel ID
+const channelId = "UCVznE73lizWZoUbV2Z8MZJw"; // Youtube Channel ID
 
 const loader = document.querySelector(".heart__loader");
 const initializeModal = (iframe, videoData) => {
