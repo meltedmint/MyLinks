@@ -37,7 +37,7 @@ const socialLinks = [
 
 const userLinks = [
     {
-        title: "Blog(KR)",
+        title: "Blog",
         link:"https://blog.meltedmint.com/",
         icon:"ic:baseline-sticky-note-2",
     },
